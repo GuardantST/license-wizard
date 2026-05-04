@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/">
+        <file>fonts/NotoSansJP-Medium.ttf</file>
+        <file>fonts/NotoSansJP-Regular.ttf</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,936 @@
+/* MainWindow centralWidget */
+QWidget#centralWidget {
+    background-color: #F5F7F9;
+}
+
+/* QFrame (white) */
+QFrame#GFrameWhite {
+    background-color: #FFFFFF;
+    border: 1px solid #F2F2F2;
+}
+
+/* QFrame (request or fingerprint file saving) */
+QFrame#GFrameFileSaveRequest {
+    background-color: #EEF1FB;
+    border-radius: 4px;
+}
+
+/* QFrame (license file saving) */
+QFrame#GFrameFileSaveLicense {
+    background-color: #F5FBEE;
+    border-radius: 4px;
+}
+
+/* QFrame (rehost file saving) */
+QFrame#GFrameFileSaveRehost{
+    background-color: #FBEEEE;
+    border-radius: 4px;
+}
+
+/* QFrame (separator line) */
+QFrame#GLine {
+    background-color: #E9E9E9;
+    border: 1px solid #E9E9E9;
+}
+
+/* QFrame (gray, specially for the license picking widget) */
+QFrame#GFrameGray {
+    background-color: #EEF1FB;
+}
+
+/* QFrame (selection frame) */
+QFrame#GFrameSelection {
+    border-top: none;
+    border-bottom: 1px solid #E9E9E9;
+    border-left: none;
+    border-right: none;
+}
+
+/* QLabel (main header) */
+QLabel#GLabelMainHeader {
+    font: 24px "Roboto Light";
+    color: #3B454F;
+}
+
+/* QLabel (main tip, tip text) */
+QLabel#GLabelMainTip {
+    font: 12px "Roboto";
+    color: #919191;
+}
+
+/* QLabel (section header) */
+QLabel#GLabelSectionHeader {
+    font: 20px "Roboto Light";
+    color: #3B454F;
+}
+
+/* QLabel (question text) */
+QLabel#GLabelQuestionText {
+    font: bold 14px "Roboto";
+    color: #3B454F;
+}
+
+/* QLabel (proposal text) */
+QLabel#GLabelProposalText {
+    font: 14px "Roboto";
+    color: #3B454F;
+}
+
+/* QLabel (proposal tip) */
+QLabel#GLabelProposalTip {
+    font: 13px "Roboto";
+    color: #898F95;
+}
+
+/* QLabel (license file icon) */
+QLabel#GLabelProposalIconLicense {
+    image: url(":/icons/file.png");
+}
+
+/* QLabel (USB dongle icon) */
+QLabel#GLabelProposalIconDongle {
+    image: url(":/icons/dongle.png");
+}
+
+/* QLabel (step number) */
+QLabel#GLabelStepNumber {
+    font: bold 14px "Roboto";
+    color: #FFFFFF;
+    text-align: center center;
+    background-color: #2787E8;
+    border-radius: 8px;
+}
+QLabel#GLabelStepNumber:disabled {
+    background-color: #D0E0F0;
+}
+
+/* QLabel (step header) */
+QLabel#GLabelStepHeader {
+    font: bold 14px "Roboto";
+    color: #232323;
+}
+
+/* QLabel (normal text) */
+QLabel#GLabelNormalText {
+    font: 14px "Roboto";
+    color: #232323;
+}
+
+/* QLabel (file name) */
+QLabel#GLabelFileName {
+    font: bold 14px "Roboto";
+    color: #232323;
+}
+
+/* QLabel (file picking error tip) */
+QLabel#GLabelFileError {
+    font: 12px "Roboto";
+    color: #D84848;
+}
+
+/* QLabel (file tip, for rehost files) */
+QLabel#GLabelFileTipRehost {
+    font: 12px "Roboto";
+    color: #E82783;
+}
+
+/* QLabel (request or fingerprint file icon) */
+QLabel#GLabelFileIconRequest {
+    image: url(":/icons/fileHelp.png");
+}
+
+/* QLabel (license file icon) */
+QLabel#GLabelFileIconLicense {
+    image: url(":/icons/fileNormal.png");
+}
+
+/* QLabel (rehost file icon) */
+QLabel#GLabelFileIconRehost {
+    image: url(":/icons/fileArrow.png");
+}
+
+/* QLabel (black, specially for the license picking widget) */
+QLabel#GLabelLicensePickingBlack {
+    font: 13px "Roboto";
+    color: #000000;
+}
+
+/* QLabel (gray, specially for the license picking widget) */
+QLabel#GLabelLicensePickingGray {
+    font: 13px "Roboto";
+    color: #607080;
+}
+
+/* QLabel (specially for the list page widget tree page license items - for */
+/*   the product items) */
+QLabel#GLabelProductItem {
+    font: 12px "Roboto Medium";
+    color: #000000;
+    padding: 5px;
+}
+/* QLabel (specially for the list page widget tree page feature items) */
+QLabel#GLabelFeatureItem {
+    font: 12px "Roboto";
+    color: #000000;
+    padding: 5px;
+}
+
+/* QLabel (specially for the license item widget via list page widget */
+/*   license item with license type DL) */
+QLabel#GLabelLicenseItemTypeDl {
+    image: url(":/icons/typeDl.png");
+}
+/* QLabel (specially for the license item widget via list page widget */
+/*   license item with dongle type Sign) */
+QLabel#GLabelLicenseItemTypeSign {
+    image: url(":/icons/typeSign.png");
+}
+/* QLabel (specially for the license item widget via list page widget */
+/*   license item with dongle type Time) */
+QLabel#GLabelLicenseItemTypeTime {
+    image: url(":/icons/typeTime.png");
+}
+/* QLabel (specially for the license item widget via list page widget */
+/*   license item with dongle type Code) */
+QLabel#GLabelLicenseItemTypeCode {
+    image: url(":/icons/typeCode.png");
+}
+
+/* QLabel (specially for the list page widget tree page license items - for */
+/*   the license item widget trial label) */
+QLabel#GLabelTrial {
+    font: 500 9px "Roboto";
+    color: #000000;
+    text-align: center center;
+    background-color: #F5F7F9;
+    border: 1px solid #DFE5EC;
+    border-radius: 8px;
+    padding: 0px 3px 0px 3px;
+}
+
+/* QLabel (list page widget, feature item, feature net resource consumption */
+/*   mode per station) */
+QLabel#GLabelModePerStation {
+    font: 12px "Roboto";
+    color: #000000;
+    image: url(":/icons/perStation.png");
+    image-position: center left;
+    background-color: transparent;
+    border: none;
+}
+/* QLabel (list page widget, feature item, feature net resource consumption */
+/*   mode per login) */
+QLabel#GLabelModePerLogin {
+    font: 12px "Roboto";
+    color: #000000;
+    image: url(":/icons/perLogin.png");
+    image-position: center left;
+    background-color: transparent;
+    border: none;
+}
+/* QLabel (list page widget, feature item, feature net resource consumption */
+/*   mode per process) */
+QLabel#GLabelModePerProcess {
+    font: 12px "Roboto";
+    color: #000000;
+    image: url(":/icons/perProcess.png");
+    image-position: center left;
+    background-color: transparent;
+    border: none;
+}
+
+/* QLabel (list page widget, feature item, feature net resource consumption */
+/*   mode per process) */
+QLabel#GLabelModeNumber {
+    font: 12px "Roboto";
+    color: #000000;
+    background-color: transparent;
+    border: none;
+}
+
+/* QLabel (notification, normal) */
+QLabel#GLabelNotificationGray {
+    font: 13px "Roboto";
+    color: #FFFFFF;
+    background-color: #414549;
+    border-radius: 3px;
+    padding: 4px 12px 4px 12px;
+}
+
+/* QLabel (notification, green) */
+QLabel#GLabelNotificationGreen {
+    font: 13px "Roboto";
+    color: #FFFFFF;
+    background-color: #83AF6F;
+    border-radius: 3px;
+    padding: 4px 12px 4px 12px;
+}
+
+/* QLabel (notification, red) */
+QLabel#GLabelNotificationRed {
+    font: 13px "Roboto";
+    color: #FFFFFF;
+    background-color: #834A4A;
+    border-radius: 3px;
+    padding: 4px 12px 4px 12px;
+}
+
+/* QLabel (tick icon) */
+QLabel#GLabelMarkIconTick {
+    image: url(":/icons/tick.png");
+}
+
+/* QLabel (progress text) */
+QLabel#GLabelProgressText {
+    font: bold 14px "Roboto";
+    color: #3B454F;
+}
+
+/* QLabel (prompt text for dongle insertion and dongle comment) */
+QLabel#GLabelPromptText {
+    font: 18px "Roboto";
+    color: #3B454F;
+}
+
+/* QLabel (tip text) */
+QLabel#GLabelTipText {
+    font: 12px "Roboto";
+    color: #232323;
+}
+
+/* QLabel (progress) */
+QLabel#GLabelProgress {
+    font: 18px "Roboto";
+    color: #232323;
+}
+
+/* QPushButton (normal) */
+QPushButton#GButton {
+    font: 12px "Roboto";
+    color: #FFFFFF;
+    background-color: #2787E8;
+    border-radius: 3px;
+    padding: 10px 20px;
+}
+QPushButton#GButton:hover,
+QPushButton#GButton:pressed {
+    background-color: #529FEC;
+    border: 1px solid #2787E8;
+}
+QPushButton#GButton:disabled {
+    background-color: #D0E0F0;
+}
+
+/* QPushButton (file saving) */
+/*   similar to GButton, but with the download icon */
+QPushButton#GButtonFileSave {
+    font: 12px "Roboto";
+    color: #FFFFFF;
+    qproperty-icon: url(":/icons/downloadSign.png");
+    qproperty-iconSize: 14px;
+    background-color: #2787E8;
+    border-radius: 3px;
+}
+QPushButton#GButtonFileSave:hover,
+QPushButton#GButtonFileSave:pressed {
+    background-color: #529FEC;
+    border: 1px solid #2787E8;
+}
+QPushButton#GButtonFileSave:disabled {
+    background-color: #D0E0F0;
+}
+
+/* QPushButton (file extract) */
+/*   similar to GButtonFileSave */
+QPushButton#GButtonFileExtract {
+    font: 12px "Roboto";
+    color: #FFFFFF;
+    qproperty-icon: url(":/icons/downloadSign.png");
+    qproperty-iconSize: 14px;
+    background-color: #E82783;
+    border-radius: 3px;
+}
+
+/* QPushButton (plus, specially for the list page widget) */
+/*   similar to GButton, but with the plus icon */
+QPushButton#GButtonLicenseActivate {
+    font: 12px "Roboto";
+    color: #FFFFFF;
+    qproperty-icon: url(":/icons/addLicensePlus.png");
+    qproperty-iconSize: 8px;
+    background-color: #2787E8;
+    border-radius: 3px;
+    padding: 5px 10px;
+}
+QPushButton#GButtonLicenseActivate:hover,
+QPushButton#GButtonLicenseActivate:pressed {
+    background-color: #529FEC;
+    border: 1px solid #2787E8;
+}
+QPushButton#GButtonLicenseActivate:disabled {
+    background-color: #D0E0F0;
+}
+
+/* QPushButton (toggleable, in triple of a left, a middle and a right ones) */
+/*   similar to GButton */
+/*   color: blue when unchecked, white when checked */
+/*   background: transparent when unchecked, blue when checked */
+QPushButton#GButtonToggleableLeft {
+    font: 12px "Roboto";
+    color: #2F80ED;
+    background-color: transparent;
+    border: 1px solid #2F80ED;
+    border-right: none;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    padding: 8px 16px;
+}
+QPushButton#GButtonToggleableRight {
+    font: 12px "Roboto";
+    color: #2F80ED;
+    background-color: transparent;
+    border: 1px solid #2F80ED;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    padding: 8px 16px;
+}
+QPushButton#GButtonToggleableMiddle {
+    font: 12px "Roboto";
+    color: #2F80ED;
+    background-color: transparent;
+    border: 1px solid #2F80ED;
+    border-right: none;
+    padding: 8px 16px;
+}
+QPushButton#GButtonToggleableLeft:checked,
+QPushButton#GButtonToggleableRight:checked,
+QPushButton#GButtonToggleableMiddle:checked {
+    color: #FFFFFF;
+    background-color: #2787E8;
+}
+QPushButton#GButtonToggleableLeft:!checked:hover,
+QPushButton#GButtonToggleableRight:!checked:hover,
+QPushButton#GButtonToggleableMiddle:!checked:hover {
+    color: #FFFFFF;
+    background-color: #529FEC;
+}
+QPushButton#GButtonToggleableLeft:checked:disabled,
+QPushButton#GButtonToggleableRight:checked:disabled,
+QPushButton#GButtonToggleableMiddle:checked:disabled {
+    background-color: #D0E0F0;
+    border: 1px solid #D0E0F0;
+}
+QPushButton#GButtonToggleableLeft:!checked:disabled,
+QPushButton#GButtonToggleableRight:!checked:disabled,
+QPushButton#GButtonToggleableMiddle:!checked:disabled {
+    color: #D0E0F0;
+    border: 1px solid #D0E0F0;
+}
+
+/* QPushButton (in-text) */
+QPushButton#GButtonInText {
+    font: 12px "Roboto";
+    color: #2787E8;
+    background-color: transparent;
+    border: none;
+}
+QPushButton#GButtonInText:hover,
+QPushButton#GButtonInText:pressed {
+    color: #529FEC;
+    text-decoration: underline;
+}
+QPushButton#GButtonInText:disabled {
+    color: #D0E0F0;
+}
+
+/* QPushButton (in-text, bigger) */
+QPushButton#GButtonInTextBigger {
+    font: 14px "Roboto";
+    color: #2787E8;
+    background-color: transparent;
+    border: none;
+}
+QPushButton#GButtonInText:hover,
+QPushButton#GButtonInText:pressed {
+    color: #529FEC;
+    text-decoration: underline;
+}
+QPushButton#GButtonInText:disabled {
+    color: #D0E0F0;
+}
+
+/* QPushButton (outline, border with text only) */
+QPushButton#GButtonOutline {
+    font: bold 11px "Roboto";
+    color: #2787E8;
+    background-color: transparent;
+    border: 1px solid #2787E8;
+    border-radius: 3px;
+    padding: 4px 7px;
+}
+QPushButton#GButtonOutline:hover,
+QPushButton#GButtonOutline:pressed {
+    color: #529FEC;
+    border: 1px solid #529FEC;
+}
+
+/* QPushButton (back) */
+/*   similar to GButtonInText, but with the arrow icon */
+QPushButton#GButtonBack {
+    font: 14px "Roboto";
+    color: #2787E8;
+    qproperty-icon: url(":/icons/backArrow.png");
+    qproperty-iconSize: 16px;
+    border: none;
+}
+QPushButton#GButtonBack:hover {
+    color: #529FEC;
+    text-decoration: underline;
+}
+QPushButton#GButtonBack:disabled {
+    color: #D0E0F0;
+}
+
+/* QPushButton (settings) */
+/*   similar to GButtonInText, but with the gear icon */
+QPushButton#GButtonSettings {
+    font: 12px "Roboto";
+    color: #2787E8;
+    qproperty-icon: url(":/icons/settings.png");
+    qproperty-iconSize: 16px;
+    border: none;
+}
+QPushButton#GButtonSettings:hover,
+QPushButton#GButtonSettings:pressed {
+    color: #529FEC;
+    text-decoration: underline;
+}
+QPushButton#GButtonSettings:disabled {
+    color: #D0E0F0;
+}
+
+/* QPushButton (offline activation, specially for the license activation */
+/*     widget) */
+/*   similar to GButtonInText, but with the cloud icon */
+QPushButton#GButtonOfflineActivate {
+    font: 12px "Roboto";
+    color: #2787E8;
+    qproperty-icon: url(":/icons/cloud.png");
+    qproperty-iconSize: 13px;
+    border: none;
+}
+QPushButton#GButtonOfflineActivate:hover,
+QPushButton#GButtonOfflineActivate:pressed {
+    color: #529FEC;
+    text-decoration: underline;
+}
+QPushButton#GButtonOfflineActivate:disabled {
+    color: #D0E0F0;
+}
+
+/* QPushButton (open log directory, with the angle bracket icon as an arrow) */
+QPushButton#GButtonLogDirectory {
+    qproperty-icon: url(":/icons/goSemiArrow.png");
+    qproperty-iconSize: 13px;
+    border: none;
+}
+
+/* QPushButton (cross) */
+QPushButton#GButtonCross {
+    qproperty-icon: url(":/icons/cross.png");
+    qproperty-iconSize: 10px;
+    border: none;
+}
+
+/* QPushButton (refresh) */
+QPushButton#GButtonRefresh {
+    qproperty-icon: url(":/icons/refreshSign.png");
+    qproperty-iconSize: 18px;
+    border: none;
+}
+
+/* QPushButton (refresh, smaller) */
+QPushButton#GButtonRefreshSmaller {
+    font: 14px "Roboto";
+    color: #2787E8;
+    qproperty-icon: url(":/icons/refreshSign.png");
+    qproperty-iconSize: 14px;
+    border: none;
+}
+
+/* QPushButton (giant) */
+/*   background: white when unchecked, gray when checked */
+/*   border color: gray when unchecked, blue when checked */
+QPushButton#GButtonGiant {
+    font: 14px "Roboto";
+    color: #232323;
+    text-align: left;
+    background-color: #FFFFFF;
+    border: 1px solid #D8D8D8;
+    border-radius: 4px;
+    padding: 0px 0px 0px 27px;
+}
+QPushButton#GButtonGiant:checked {
+    background-color: #F6FAFE;
+    border: 2px solid #2F80ED;
+}
+QPushButton#GButtonGiant:hover,
+QPushButton#GButtonGiant:pressed {
+    background-color: #F6FAFE;
+}
+QPushButton#GButtonGiant:checked:disabled {
+    border: 2px solid #D0E0F0;
+}
+
+/* QPushButton (ellipsis) */
+QPushButton#GButtonEllipsis {
+    image: url(":/icons/ellipsis.png");
+    border: none;
+}
+QPushButton#GButtonEllipsis::menu-indicator {
+    image: none;
+}
+
+/* QPushButton (normal, with text, without icons) */
+QPushButton#GButtonWriteMass {
+    font: 14px "Roboto";
+    color: #FFFFFF;
+    background-color: #2787E8;
+    border: none;
+    border-radius: 3px;
+    padding: 5px 10px;
+}
+
+/* QPushButton (semi-outline, with text, without icons) */
+QPushButton#GButtonWrite {
+    font: 14px "Roboto";
+    color: #2787E8;
+    background-color: #EBF1F8;
+    border: none;
+    border-radius: 3px;
+    padding: 5px 10px;
+}
+
+/* QPushButton (semi-outline, without text, with blink icon) */
+QPushButton#GButtonBlink {
+    image: url(":/icons/blink.png");
+    background-color: #EBF1F8;
+    border: none;
+    border-radius: 3px;
+    padding: 5px 10px;
+}
+
+/* QPushButton (specially for the list page widget tree page license item */
+/*   name button) */
+QPushButton#GButtonLicenseItem
+{
+    font: 12px "Roboto Medium";
+    color: #000000;
+    qproperty-icon: url(":/icons/copySign.png");
+    qproperty-iconSize: 12px;
+    background-color: transparent;
+    border: none;
+    padding: 5px;
+}
+QPushButton#GButtonLicenseItem:hover,
+QPushButton#GButtonLicenseItem:pressed
+{
+    color: #2787e8;
+    text-decoration: underline;
+}
+
+/* QComboBox is really complicated to customize properly... */
+QComboBox
+{
+    font: 13px "Roboto";
+    color: black;
+    image: url(":/icons/langSignNorm.png");
+    image-position: center left;
+    background-color: transparent;
+    border: none;
+    padding: 7px 0px;
+}
+QComboBox:hover,
+QComboBox:on
+{
+    color: #0EB5F1;
+    image: url(":/icons/langSignHighlight.png");
+}
+QComboBox::drop-down
+{
+    border: none;
+}
+QComboBox::down-arrow
+{
+    image: url(":/icons/comboDownNorm.png");
+}
+QComboBox::down-arrow:hover
+{
+    image: url(":/icons/comboDownHighlight.png");
+}
+QComboBox::down-arrow:on
+{
+    image: url(":/icons/comboUpHighlight.png");
+}
+/* Object name is inapplicable here */
+QComboBox QAbstractItemView
+{
+    font: 15px "Roboto";
+    color: black;
+    background-color: white;
+    border: none;
+    border-radius: 4px;
+    selection-color: #0EB5F1;
+    selection-background-color: #ECF4FC;
+    min-width: 160px;
+    max-width: 160px;
+}
+QComboBox QAbstractItemView::item
+{
+    border: none;
+    padding: 15px 20px 15px 4px;
+}
+QComboBox QAbstractItemView::item:selected
+{
+    background-color: #ECF4FC;
+}
+
+/* QLineEdit (default) */
+QLineEdit {
+    font: 12px "Roboto";
+    color: #959595;
+    background-color: #FEFFFF;
+    border: 1px solid #E2E2E2;
+    border-radius: 3px;
+    padding: 0px 7px;
+}
+
+/* QCheckBox (default) */
+QCheckBox {
+    font: 14px "Roboto";
+    color: #232323;
+    background-color: transparent;
+}
+QCheckBox::indicator::unchecked {
+    image: url(":/icons/switchBoxUnchecked.png");
+}
+QCheckBox::indicator::checked {
+    image: url(":/icons/switchBoxChecked.png");
+}
+
+/* QMenu (default) */
+QMenu {
+    font: 14px "Roboto";
+    color: #2787E8;
+    background-color: #FFFFFF;
+    border: none;
+    padding: 15px;
+}
+QMenu::item {
+    font: 14px "Roboto";
+    color: #2787E8;
+    background-color: #FFFFFF;
+    border: none;
+    padding: 5px;
+}
+QMenu::item:hover,
+QMenu::item:selected {
+    color: #529FEC;
+}
+QMenu::separator {
+    background-color: #FFFFFF;
+    padding: 5px;
+    height: 1px;
+}
+
+/* QScrollBar (default) */
+QScrollBar {
+    background-color: #EBF1F8;
+    border: none;
+    border-radius: 2px;
+    height: 5px;
+    width: 5px;
+    margin-left: 2px;
+}
+QScrollBar:handle {
+    background-color: #2787E8;
+    border: none;
+    border-radius: 2px;
+}
+QScrollBar:add-page {
+    background-color: transparent;
+}
+QScrollBar:sub-page {
+    background-color: transparent;
+}
+QScrollBar:left-arrow {
+    height: 0px;
+    width: 0px;
+}
+QScrollBar:right-arrow {
+    height: 0px;
+    width: 0px;
+}
+QScrollBar:add-line {
+    height: 0px;
+    width: 0px;
+}
+QScrollBar:sub-line {
+    height: 0px;
+    width: 0px;
+}
+
+/* QProgressBar (basic) */
+QProgressBar#GProgressBar {
+    background-color: #EEF1FB;
+    border: none;
+    border-radius: 2px;
+}
+QProgressBar#GProgressBar::chunk {
+    background-color: #2787E8;
+}
+/* QProgressBar (basic, erroneous) */
+QProgressBar#GProgressBarErroneous {
+    background-color: #EEF1FB;
+    border: none;
+    border-radius: 2px;
+}
+QProgressBar#GProgressBarErroneous::chunk {
+    background-color: #D84848;
+}
+
+/* QToolTip (default) */
+/*   border rounding does not affect the shadow */
+QToolTip {
+    background-color: #FFFFFF;
+    border: 1px solid #607080;
+}
+
+/* QTreeWidget (main) */
+QTreeWidget#GTreeWidgetMain {
+    font: 12px "Roboto";
+    color: #000000;
+    background-color: #FFFFFF;
+    border: none;
+    padding: 8px;
+}
+QTreeWidget#GTreeWidgetMain::item {
+    font: 12px "Roboto";
+    color: #000000;
+    border: none;
+}
+QTreeWidget#GTreeWidgetMain::item:hover,
+QTreeWidget#GTreeWidgetMain::item:selected {
+    background-color: #E2EEFA;
+}
+/* This widget state specific record would only work when the referenced */
+/*   qproperty value setting is followed by QStyle::unpolish() and */
+/*   QStyle::polish() calls */
+QTreeWidget#GTreeWidgetMain::item LicenseItemWidget[m_selected="false"] {
+    background-color: #E9E9E9;
+}
+QTreeWidget#GTreeWidgetMain::item LicenseItemWidget[m_selected="true"] {
+    background-color: #E2EEFA;
+}
+QTreeWidget#GTreeWidgetMain::item LicenseItemWidget:hover {
+    background-color: #E2EEFA;
+}
+QTreeWidget#GTreeWidgetMain QHeaderView {
+    background-color: #FFFFFF;
+}
+QTreeWidget#GTreeWidgetMain QHeaderView::section:horizontal {
+    font: 12px "Roboto";
+    background-color: #FFFFFF;
+    border-top: none;
+    border-bottom: none;
+    border-left: none;
+    border-right: 1px solid #959595;
+    padding: 8px;
+}
+QTreeWidget#GTreeWidgetMain QHeaderView::section:horizontal:last {
+    border: none;
+}
+
+/* QTreeWidget (auxiliary) */
+/*   ::items:has-children corresponds to the license item */
+/*   ::items:!has-children corresponds to the product item */
+/*   feature items are not represented */
+/*   show-decoration-selected makes item hovered when it's branch is also */
+/*     hovered, and vice versa */
+QTreeWidget#GTreeWidgetAux {
+    font: 13px "Roboto";
+    color: #000000;
+    border: none;
+    border-bottom: 1px solid #E9E9E9;
+    show-decoration-selected: 1;
+}
+QTreeWidget#GTreeWidgetAux::item {
+    font: 13px "Roboto";
+    height: 36px;
+}
+QTreeWidget#GTreeWidgetAux::item:has-children {
+    color: #000000;
+    border-top: 1px solid #E9E9E9;
+}
+QTreeWidget#GTreeWidgetAux::item:has-children:hover {
+    background-color: #EEF1FB;
+}
+QTreeWidget#GTreeWidgetAux::item:has-children:selected {
+    color: #2F80ED;
+    background-color: #EEF1FB;
+}
+QTreeWidget#GTreeWidgetAux::item:!has-children {
+    color: #607080;
+}
+QTreeWidget#GTreeWidgetAux::item:!has-children:hover {
+    background-color: transparent;
+}
+QTreeWidget#GTreeWidgetAux::item:!has-children:selected {
+    background-color: transparent;
+}
+QTreeWidget#GTreeWidgetAux::branch {
+    background-color: transparent;
+    border-image: none;
+    padding: 10px;
+}
+QTreeWidget#GTreeWidgetAux::branch:has-children {
+    border-top: 1px solid #E9E9E9;
+}
+QTreeWidget#GTreeWidgetAux::branch:!has-children {
+    background-color: #FFFFFF;
+}
+QTreeWidget#GTreeWidgetAux::branch:has-children:closed {
+    image: url(":/icons/expandSign.png");
+}
+QTreeWidget#GTreeWidgetAux::branch:has-children:open  {
+    image: url(":/icons/collapseSign.png");
+}
+QTreeWidget#GTreeWidgetAux::branch:has-children:closed:hover,
+QTreeWidget#GTreeWidgetAux::branch:has-children:open:hover {
+    background-color: #EEF1FB;
+}
+QTreeWidget#GTreeWidgetAux::branch:has-children:closed:selected {
+    image: url(":/icons/expandSignHover.png");
+    background-color: #EEF1FB;
+}
+QTreeWidget#GTreeWidgetAux::branch:has-children:open:selected {
+    image: url(":/icons/collapseSignHover.png");
+    background-color: #EEF1FB;
+}
+QTreeWidget#GTreeWidgetAux QScrollBar:horizontal {
+    height: 0px;
+}
+
+/* QTreeWidget (dongle list) */
+QTreeWidget#GListDongle {
+    background-color: transparent;
+    border-top: 1px solid #E9E9E9;
+}
+QTreeWidget#GListDongle::item {
+    border-bottom: 1px solid #E9E9E9;
+    height: 50px;
+}

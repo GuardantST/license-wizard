@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>LocalPageWidget</class>
+ <widget class="QWidget" name="LocalPageWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>660</width>
+    <height>296</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>660</width>
+    <height>0</height>
+   </size>
+  </property>
+  <layout class="QGridLayout" name="localLayout">
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <item row="0" column="0">
+    <widget class="QStackedWidget" name="stackedWidget">
+     <widget class="OnlinePageWidget" name="onlinePage"/>
+     <widget class="OfflinePageWidget" name="offlinePage"/>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>OnlinePageWidget</class>
+   <extends>QWidget</extends>
+   <header>OnlinePageWidget.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>OfflinePageWidget</class>
+   <extends>QWidget</extends>
+   <header>OfflinePageWidget.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
