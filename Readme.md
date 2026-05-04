@@ -1,6 +1,6 @@
 # Info
 
-This is _Guardant License Wizard_ repository. Currently it has code from the _Guardant Software Licensing Kit_ version 4.5.6 (changed for open-source).
+This is _Guardant License Wizard_ repository. Currently it has code from the [_Guardant Software Licensing Kit_](https://guardant.com/) version 4.5.6 (changed for open-source).
 
 Note that this code is not at all compatible with the _License Wizard_ executable from the _Guardant Software Licensing Kit_ distro (see e.g. settings path domains).
 
